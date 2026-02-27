@@ -4,7 +4,6 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![NetworkX](https://img.shields.io/badge/NetworkX-3.0+-orange.svg)](https://networkx.org)
-[![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](LICENSE)
 
 ---
 
@@ -17,7 +16,7 @@ Using a synthetic multi-layered network that combines the **SNAP Facebook networ
 **Key finding:** Network position matters more than individual preferences. Community-bridge targeting achieves up to 2x the adoption rate of preference-based targeting — even in highly homophilic networks.
 
 For the full technical report and dataset card, see:
-- [`Network_Science_Report.pdf`](Network_Science_Report.pdf)
+- [`report.pdf`](Report.pdf)
 - [`Dataset_Card.pdf`](Dataset_Card.pdf)
 
 ---
@@ -173,17 +172,17 @@ Community 1 consistently achieves the highest adoption rate regardless of homoph
 
 ### Key Findings
 
-**Community bridges consistently win.** Targeting nodes that span community boundaries achieves the highest adoption rates across all homophily settings — roughly double that of preference-based targeting. Beyond final adoption rates, community-bridges also demonstrates the steepest early diffusion trajectory, reaching high adoption faster than all other strategies. For time-sensitive movie releases where early buzz matters, this speed advantage is as important as the final reach.
+**Community bridges consistently win.** Targeting nodes that span community boundaries achieves the highest adoption rates across all homophily settings roughly double that of preference-based targeting. Beyond final adoption rates, community-bridges also demonstrates the steepest early diffusion trajectory, reaching high adoption faster than all other strategies. For time-sensitive movie releases where early buzz matters, this speed advantage is as important as the final reach.
 
-**Preference-based targeting fails.** Despite marketing intuition, targeting users with the strongest genre preferences performs poorly even in high-homophily networks (2.5–2.8% adoption) — barely better than random seeding. This challenges the conventional wisdom that matching promotions to user taste profiles should be effective. Network position fundamentally outweighs individual preference in determining promotion effectiveness, suggesting that who someone is connected to matters more than what they like.
+**Preference-based targeting fails.** Despite marketing intuition, targeting users with the strongest genre preferences performs poorly even in high-homophily networks (2.5–2.8% adoption) is barely better than random seeding. This challenges the conventional wisdom that matching promotions to user taste profiles should be effective. Network position fundamentally outweighs individual preference in determining promotion effectiveness, suggesting that who someone is connected to matters more than what they like.
 
-**Homophily amplifies strategy differences, not diffusion overall.** Contrary to expectation, increasing homophily does not uniformly enhance diffusion rates. Instead it polarises outcomes — amplifying already-strong community-based strategies while further suppressing weak ones like preference-based and random targeting. High preference similarity makes community boundaries more significant barriers to cross-community spread, which is precisely why bridge nodes become increasingly valuable as homophily increases.
+**Homophily amplifies strategy differences, not diffusion overall.** Contrary to expectation, increasing homophily does not uniformly enhance diffusion rates. Instead it polarises outcomes, amplifying already-strong community-based strategies while further suppressing weak ones like preference-based and random targeting. High preference similarity makes community boundaries more significant barriers to cross-community spread, which is precisely why bridge nodes become increasingly valuable as homophily increases.
 
-**Hub targeting is insufficient on its own.** Degree-based targeting — selecting the most connected nodes — achieves a moderate 3.9% adoption rate consistently across all homophily levels, outperforming random and preference strategies but never matching community-based approaches. This shows that raw connectivity without community awareness is insufficient. A highly connected node within a single community cannot bridge information across community boundaries the way a bridge node can, even if it has more connections overall.
+**Hub targeting is insufficient on its own.** Degree-based targeting — selecting the most connected nodes achieves a moderate 3.9% adoption rate consistently across all homophily levels, outperforming random and preference strategies but never matching community-based approaches. This shows that raw connectivity without community awareness is insufficient. A highly connected node within a single community cannot bridge information across community boundaries the way a bridge node can, even if it has more connections overall.
 
 **Community size does not predict adoption success.** The community-level charts reveal that Community 1 consistently dominates adoption rates despite not always being the largest community in the network. Communities 8 and 4, which are among the largest by node count, show some of the lowest adoption rates. Internal cohesion, bridge connectivity, and structural position within the broader network appear to be the true predictors of community-level promotion success.
 
-**Practical implication for film marketers.** Taken together, these findings suggest a fundamental shift in promotional strategy — away from demographic or preference-based audience targeting and toward network-structural approaches. Identifying and seeding users who sit at the boundaries between communities, rather than users with the strongest genre preferences or the largest follower counts, consistently produces the best outcomes regardless of how similar the audience's tastes are.
+**Practical implication for film marketers.** Taken together, these findings suggest a fundamental shift in promotional strategy away from demographic or preference-based audience targeting and toward network-structural approaches. Identifying and seeding users who sit at the boundaries between communities, rather than users with the strongest genre preferences or the largest follower counts, consistently produces the best outcomes regardless of how similar the audience's tastes are.
 
 ---
 
