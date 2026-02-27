@@ -17,7 +17,7 @@ Using a synthetic multi-layered network that combines the **SNAP Facebook networ
 **Key finding:** Network position matters more than individual preferences. Community-bridge targeting achieves up to 2x the adoption rate of preference-based targeting — even in highly homophilic networks.
 
 For the full technical report and dataset card, see:
-- [`Network_Science_Report.pdf`](Report.pdf)
+- [`Network_Science_Report.pdf`](report.pdf)
 - [`Dataset_Card.pdf`](Dataset_Card.pdf)
 
 ---
